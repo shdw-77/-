@@ -1,2 +1,162 @@
 # The-Wilson-s-Lane
 About us
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wilson’s Lane</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-indigo-600">The Wilson’s Lane</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#beranda" class="text-gray-700 hover:text-indigo-600">Beranda</a>
+        <a href="#tentang" class="text-gray-700 hover:text-indigo-600">Tentang</a>
+        <a href="#layanan" class="text-gray-700 hover:text-indigo-600">Layanan</a>
+        <a href="#menu" class="text-gray-700 hover:text-indigo-600">Menu</a>
+        <a href="#galeri" class="text-gray-700 hover:text-indigo-600">Galeri</a>
+        <a href="#testimoni" class="text-gray-700 hover:text-indigo-600">Testimoni</a>
+        <a href="#kontak" class="text-gray-700 hover:text-indigo-600">Kontak</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 text-2xl">&#9776;</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+      <a href="#beranda" class="block py-2">Beranda</a>
+      <a href="#tentang" class="block py-2">Tentang</a>
+      <a href="#layanan" class="block py-2">Layanan</a>
+      <a href="#menu" class="block py-2">Menu</a>
+      <a href="#galeri" class="block py-2">Galeri</a>
+      <a href="#testimoni" class="block py-2">Testimoni</a>
+      <a href="#kontak" class="block py-2">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="beranda" class="pt-24 pb-20 bg-cover bg-center text-white" style="background-image: url('https://source.unsplash.com/1600x900/?coffee,cafe');">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di The Wilson’s Lane</h1>
+      <p class="text-lg md:text-xl">Tempat terbaik untuk ngopi, ngobrol, dan menikmati hari.</p>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
+      <p class="text-gray-600">The Wilson’s Lane adalah cafe di Jakarta yang menyajikan kopi terbaik, makanan sehat, dan atmosfer taman hijau yang santai dan nyaman untuk semua kalangan.</p>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="py-16 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Layanan Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Kopi & Minuman</h3>
+          <p class="text-gray-600">Kopi pilihan single origin dan minuman spesial buatan barista.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Makanan Sehat</h3>
+          <p class="text-gray-600">Menu sehat, vegetarian, vegan dan pilihan sarapan lengkap.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Acara & Workshop</h3>
+          <p class="text-gray-600">Live music, komunitas, dan event kreatif mingguan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Makanan -->
+  <section id="menu" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Menu Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <img src="https://source.unsplash.com/400x300/?coffee" class="w-full rounded mb-4" alt="Kopi">
+          <h3 class="font-semibold text-xl mb-2">Kopi Arabika</h3>
+          <p class="text-gray-600">Rp28.000</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <img src="https://source.unsplash.com/400x300/?salad" class="w-full rounded mb-4" alt="Salad">
+          <h3 class="font-semibold text-xl mb-2">Salad Vegan</h3>
+          <p class="text-gray-600">Rp35.000</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <img src="https://source.unsplash.com/400x300/?cake" class="w-full rounded mb-4" alt="Kue">
+          <h3 class="font-semibold text-xl mb-2">Kue Red Velvet</h3>
+          <p class="text-gray-600">Rp32.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="py-16 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Galeri Foto</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://source.unsplash.com/300x300/?coffee-shop" class="rounded shadow">
+        <img src="https://source.unsplash.com/300x300/?cafe-interior" class="rounded shadow">
+        <img src="https://source.unsplash.com/300x300/?coffee-barista" class="rounded shadow">
+        <img src="https://source.unsplash.com/300x300/?coffee-cup" class="rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Apa Kata Mereka</h2>
+      <div class="space-y-6">
+        <blockquote class="text-gray-600 italic">"Tempatnya nyaman banget, kopinya enak, staff-nya ramah. Highly recommended!" - Rina, Jakarta</blockquote>
+        <blockquote class="text-gray-600 italic">"Saya suka suasana tamannya. Cocok buat kerja remote atau santai sore." - Budi, Bekasi</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+      <p class="text-gray-600 mb-6">Jl. Tegal No.4, Menteng, Jakarta Pusat<br>Email: info@wilsonslane.com | WA: <a href="https://wa.me/6281234567890" class="text-indigo-600 underline">0812-3456-7890</a></p>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+        <input type="text" placeholder="Nama" class="p-3 rounded border" required>
+        <input type="email" placeholder="Email" class="p-3 rounded border" required>
+        <textarea placeholder="Pesan Anda" rows="4" class="p-3 rounded border md:col-span-2" required></textarea>
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded md:col-span-2">Kirim Pesan</button>
+      </form>
+
+      <div class="mt-10">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.4532418809263!2d106.83270436956147!3d-6.190187999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cfd3381f9d%3A0x42b2c983d09a1b4b!2sMenteng!5e0!3m2!1sid!2sid!4v1625098234567!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center text-gray-600">
+    &copy; 2025 The Wilson’s Lane. All rights reserved.
+  </footer>
+
+  <!-- JS Mobile Menu -->
+  <script>
+    document.getElementById("menu-btn").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
