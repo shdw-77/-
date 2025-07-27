@@ -640,8 +640,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold">Jam Buka</h4>
-                                <p>Senin - Jumat: 08.00 - 22.00</p>
-                                <p>Sabtu - Minggu: 09.00 - 23.00</p>
+                                <p>Senin - Sabtu: 12.00 - 21.00</p>
+                                <p>Minggu       : 12.00 - 19.00</p>
                             </div>
                         </div>
                         
